@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A7BFD0E-8FBE-4D68-87AA-1C9DDEA905BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fyp_mid_project</RootNamespace>
+    <AssemblyName>fyp_mid_project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="DeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudent.Designer.cs">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentMainForm.Designer.cs">
+      <DependentUpon>EditStudentMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentRegNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentRegNo.Designer.cs">
+      <DependentUpon>EditStudentRegNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manage students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manage students.Designer.cs">
+      <DependentUpon>manage students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mian From.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mian From.Designer.cs">
+      <DependentUpon>Mian From.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchStudentRegNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchStudentRegNo.Designer.cs">
+      <DependentUpon>SearchStudentRegNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerchedStudentViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerchedStudentViewForm.Designer.cs">
+      <DependentUpon>SerchedStudentViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs" />
+    <Compile Include="StudentDB.cs" />
+    <Compile Include="student_info_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_info_form.Designer.cs">
+      <DependentUpon>student_info_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentMainForm.resx">
+      <DependentUpon>EditStudentMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentRegNo.resx">
+      <DependentUpon>EditStudentRegNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage students.resx">
+      <DependentUpon>manage students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mian From.resx">
+      <DependentUpon>Mian From.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchStudentRegNo.resx">
+      <DependentUpon>SearchStudentRegNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerchedStudentViewForm.resx">
+      <DependentUpon>SerchedStudentViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_info_form.resx">
+      <DependentUpon>student_info_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MySqlCommand.xml" />
+    <Content Include="MySqlCommandBuilder.xml" />
+    <Content Include="MySqlConnection.xml" />
+    <Content Include="MySqlConnectionStringBuilder.xml" />
+    <Content Include="MySqlDataAdapter.xml" />
+    <Content Include="MySqlDataReader.xml" />
+    <Content Include="MySqlException.xml" />
+    <Content Include="MySqlHelper.xml" />
+    <Content Include="MySqlParameter.xml" />
+    <Content Include="MySqlParameterCollection.xml" />
+    <Content Include="MySqlTransaction.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
